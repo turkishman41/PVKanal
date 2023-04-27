@@ -17,7 +17,7 @@ API_HASH = config("API_HASH", default=None)
 BOT_TOKEN = config("BOT_TOKEN", default=None)
 SESSION = config("SESSION", default=None)
 FORCESUB = config("FORCESUB", default=None)
-AUTH = []
+AUTH = config("AUTH", default=None, cast=int)
 
 auth = config("AUTH", default=None, cast=int)
 ids = auth.split(",")
